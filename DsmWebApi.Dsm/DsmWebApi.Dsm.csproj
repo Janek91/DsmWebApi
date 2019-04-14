@@ -1,164 +1,27 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{085B9666-E270-4643-92CC-E099C29F8FE1}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DsmWebApi.Dsm</RootNamespace>
-    <AssemblyName>DsmWebApi.Dsm</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile88</TargetFrameworkProfile>
-    <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Set of APIs to access the DSM module of a DSM system.</Description>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>bin\Release\DsmWebApi.Dsm.XML</DocumentationFile>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <RunCodeAnalysis>false</RunCodeAnalysis>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>..\DsmWebApi.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
+
   <ItemGroup>
-    <!-- A reference to the entire .NET Framework is automatically included -->
-    <CodeAnalysisDictionary Include="..\CodeAnalysisDictionary.xml">
-      <Link>Properties\CodeAnalysisDictionary.xml</Link>
-    </CodeAnalysisDictionary>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\SharedAssemblyInfo.cs">
-      <Link>Properties\SharedAssemblyInfo.cs</Link>
-    </Compile>
-    <Compile Include="Application\DsmApplication.cs" />
-    <Compile Include="Application\DsmApplicationApi.cs" />
-    <Compile Include="Application\DsmApplicationCollection.cs" />
-    <Compile Include="AutoBlock\DsmAutoBlockConfiguration.cs" />
-    <Compile Include="Connection\DsmConnection.cs" />
-    <Compile Include="Connection\DsmConnectionApi.cs" />
-    <Compile Include="Connection\DsmConnectionCollection.cs" />
-    <Compile Include="AutoBlock\DsmBlockedAddress.cs" />
-    <Compile Include="AutoBlock\DsmAutoBlockApi.cs" />
-    <Compile Include="AutoBlock\DsmBlockedAddressCollection.cs" />
-    <Compile Include="EncryptShare\DsmEncryptShareApi.cs" />
-    <Compile Include="IScsi\DsmIScsiApi.cs" />
-    <Compile Include="IScsi\DsmIScsiConfiguration.cs" />
-    <Compile Include="IScsi\DsmIScsiLun.cs" />
-    <Compile Include="IScsi\DsmIScsiMapping.cs" />
-    <Compile Include="IScsi\DsmIScsiTarget.cs" />
-    <Compile Include="LogViewer\DsmLogEntry.cs" />
-    <Compile Include="LogViewer\DsmLogEntryCollection.cs" />
-    <Compile Include="LogViewer\DsmLogTypes.cs" />
-    <Compile Include="LogViewer\DsmLogViewerApi.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <DependentUpon>Resources.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
+    <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SystemLoading\DsmCpuLoad.cs" />
-    <Compile Include="SystemLoading\DsmMemoryLoad.cs" />
-    <Compile Include="SystemLoading\DsmNetworkLoad.cs" />
-    <Compile Include="SystemLoading\DsmSystemLoad.cs" />
-    <Compile Include="SystemLoading\DsmSystemLoadingApi.cs" />
-    <Compile Include="FindMe\DsmFindMeApi.cs" />
-    <Compile Include="Volume\DsmVolume.cs" />
-    <Compile Include="Volume\DsmVolumeApi.cs" />
-    <Compile Include="Volume\DsmVolumeCollection.cs" />
-    <Compile Include="Network\DsmIPv4Address.cs" />
-    <Compile Include="Network\DsmIPv6Address.cs" />
-    <Compile Include="Network\DsmIPv6AddressScope.cs" />
-    <Compile Include="Network\DsmIPv6AddressScopeConverter.cs" />
-    <Compile Include="Network\DsmNetworkInterface.cs" />
-    <Compile Include="Network\DsmNetworkApi.cs" />
-    <Compile Include="Network\DsmNetworkConfiguration.cs" />
-    <Compile Include="Group\DsmGroup.cs" />
-    <Compile Include="Group\DsmGroupApi.cs" />
-    <Compile Include="Group\DsmGroupCollection.cs" />
-    <Compile Include="Package\DsmPackage.cs" />
-    <Compile Include="Package\DsmPackageApi.cs" />
-    <Compile Include="Package\DsmPackageCollection.cs" />
-    <Compile Include="Service\DsmService.cs" />
-    <Compile Include="Service\DsmServiceApi.cs" />
-    <Compile Include="Service\DsmServiceCollection.cs" />
-    <Compile Include="Share\DsmShare.cs" />
-    <Compile Include="Share\DsmShareApi.cs" />
-    <Compile Include="Share\DsmShareCollection.cs" />
-    <Compile Include="Share\DsmShareStatus.cs" />
-    <Compile Include="User\DsmUser.cs" />
-    <Compile Include="User\DsmUserApi.cs" />
-    <Compile Include="Info\DsmInformation.cs" />
-    <Compile Include="Info\DsmInformationApi.cs" />
-    <Compile Include="DsmSystem\DsmSystemApi.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User\DsmUserCollection.cs" />
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\DsmWebApi.Core\DsmWebApi.Core.csproj">
       <Project>{dd636fac-3e66-4b77-8520-babc5cb6bf7d}</Project>
       <Name>DsmWebApi.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.Threading.Tasks">
-      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\portable-net40+sl4+win8+wp71\Microsoft.Threading.Tasks.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Threading.Tasks.Extensions">
-      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\portable-net40+sl4+win8+wp71\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime">
-      <HintPath>..\packages\Microsoft.Bcl.1.0.19\lib\portable-net40+sl4+win8+wp71\System.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks">
-      <HintPath>..\packages\Microsoft.Bcl.1.0.19\lib\portable-net40+sl4+win8+wp71\System.Threading.Tasks.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DsmWebApi.Dsm.nuspec" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
-  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.7\tools\Microsoft.Bcl.Build.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

@@ -1,0 +1,10 @@
+<Project>
+  
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<Deterministic>true</Deterministic>
+		<RuntimeIdentifiers>win;win-x86;win-x64</RuntimeIdentifiers>
+		<AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+	</PropertyGroup>
+	
+</Project>

@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DsmWebApi.Core", "DsmWebApi.Core\DsmWebApi.Core.csproj", "{DD636FAC-3E66-4B77-8520-BABC5CB6BF7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DsmWebApi.AudioStation", "DsmWebApi.AudioStation\DsmWebApi.AudioStation.csproj", "{5DD2BD2A-2FE1-4528-AFB5-AC65E8080B18}"
@@ -15,22 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DsmWebApi.VideoController",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DsmWebApi.VideoStation", "DsmWebApi.VideoStation\DsmWebApi.VideoStation.csproj", "{D9C95909-B721-4A10-A8AA-D22D9FDBD431}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A3F8B862-FC37-444F-8DD7-C21E568BA2A9}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DsmWebApi.WpfClient", "DsmWebApi.WpfClient\DsmWebApi.WpfClient.csproj", "{0F7E4E08-59C7-4FD5-879E-DC676F7B0BD3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DsmWebApi.WindowsStoreClient", "DsmWebApi.WindowsStoreClient\DsmWebApi.WindowsStoreClient.csproj", "{006D288A-68F4-478C-861E-F72038D53772}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{752CFDE2-4C06-489B-8099-362DB34043A6}"
-	ProjectSection(SolutionItems) = preProject
-		CodeAnalysisDictionary.xml = CodeAnalysisDictionary.xml
-		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DsmWebApi.Core.Tests", "DsmWebApi.Core.Tests\DsmWebApi.Core.Tests.csproj", "{B8133B0A-5C22-4B00-903C-3008D125CF34}"
 EndProject
@@ -167,5 +156,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52A432A2-A487-4509-BBA9-E9CCAE49E90B}
 	EndGlobalSection
 EndGlobal

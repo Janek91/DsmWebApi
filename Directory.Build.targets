@@ -1,0 +1,12 @@
+<Project>
+
+	<PropertyGroup Condition=" '$(GeneratePackageOnBuild)' != 'false' ">
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<None Remove="**\*.ncrunchproject" />
+		<None Remove="**\*.vspscc" />
+	</ItemGroup>
+  
+</Project>
