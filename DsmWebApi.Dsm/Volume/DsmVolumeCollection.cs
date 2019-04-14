@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.Volume
 {
+    using Newtonsoft.Json;
     using System.Collections;
     using System.Collections.Generic;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// A collection of volumes on a DSM system.

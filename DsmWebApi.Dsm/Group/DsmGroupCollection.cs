@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.Group
 {
+    using Newtonsoft.Json;
     using System.Collections;
     using System.Collections.Generic;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// A collection of groups on a DSM system.

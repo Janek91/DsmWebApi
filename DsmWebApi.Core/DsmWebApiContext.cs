@@ -1,5 +1,6 @@
 ﻿namespace DsmWebApi.Core
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.Globalization;
@@ -7,7 +8,6 @@
     using System.Linq;
     using System.Net;
     using System.Threading.Tasks;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// Default implementation of the DSM API context based on the Web API of Synology's DSM system.

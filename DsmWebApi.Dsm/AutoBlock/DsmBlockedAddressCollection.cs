@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.AutoBlock
 {
+    using Newtonsoft.Json;
     using System.Collections;
     using System.Collections.Generic;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// A collection of blocked addresses on a DSM system.

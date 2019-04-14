@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.WpfClient.Core.Views
 {
+    using DsmWebApi.WpfClient.Core.ViewModels;
     using System.Windows;
     using System.Windows.Controls;
-    using DsmWebApi.WpfClient.Core.ViewModels;
 
     /// <summary>
     /// Interaction logic for AuthenticationView.xaml

@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.Connection
 {
-    using System;
     using DsmWebApi.Core.Json;
     using Newtonsoft.Json;
+    using System;
 
     /// <summary>
     /// A connection to a DSM system.

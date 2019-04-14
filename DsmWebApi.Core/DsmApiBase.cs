@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Core
 {
+    using DsmWebApi.Core.Properties;
     using System;
     using System.Globalization;
-    using DsmWebApi.Core.Properties;
 
     /// <summary>
     /// Base implementation of a DSM API.

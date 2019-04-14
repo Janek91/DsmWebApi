@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.DsmSystem
 {
-    using System.Threading.Tasks;
     using DsmWebApi.Core;
     using Newtonsoft.Json.Linq;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// The DSM system API.

@@ -1,7 +1,7 @@
 ﻿namespace DsmWebApi.Dsm.IScsi
 {
-    using System.Collections.Generic;
     using Newtonsoft.Json;
+    using System.Collections.Generic;
 
     /// <summary>
     /// iSCSI configuration of a DSM system.

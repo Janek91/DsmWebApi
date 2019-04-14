@@ -1,10 +1,10 @@
 ﻿namespace DsmWebApi.Dsm.Package
 {
+    using DsmWebApi.Core;
+    using Newtonsoft.Json;
     using System.Collections.Generic;
     using System.Globalization;
     using System.Threading.Tasks;
-    using DsmWebApi.Core;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// The DSM package API.

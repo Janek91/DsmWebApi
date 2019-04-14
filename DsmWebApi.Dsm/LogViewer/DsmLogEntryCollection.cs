@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.LogViewer
 {
+    using Newtonsoft.Json;
     using System.Collections;
     using System.Collections.Generic;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// A collection of log entries on a DSM system.

@@ -1,9 +1,9 @@
 ﻿namespace DsmWebApi.Core.Json
 {
-    using System;
-    using System.Globalization;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
+    using System;
+    using System.Globalization;
 
     /// <summary>
     /// JSON converter that converts a string into a <see cref="DateTime"/> with the format used by the DSM system.

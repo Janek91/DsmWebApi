@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.Network
 {
-    using System.Threading.Tasks;
     using DsmWebApi.Core;
     using Newtonsoft.Json;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// The DSM network API.

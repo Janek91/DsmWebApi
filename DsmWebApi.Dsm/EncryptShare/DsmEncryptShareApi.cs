@@ -1,9 +1,9 @@
 ﻿namespace DsmWebApi.Dsm.EncryptShare
 {
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
     using DsmWebApi.Core;
     using DsmWebApi.Dsm.Properties;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// The DSM encrypt share API.

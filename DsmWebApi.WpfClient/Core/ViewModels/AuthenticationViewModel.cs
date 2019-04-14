@@ -1,10 +1,11 @@
-﻿namespace DsmWebApi.WpfClient.Core.ViewModels
+﻿using GalaSoft.MvvmLight.Messaging;
+
+namespace DsmWebApi.WpfClient.Core.ViewModels
 {
-    using System.Threading.Tasks;
-    using System.Windows.Input;
     using DsmWebApi.Core;
     using DsmWebApi.WpfClient.ViewModel;
-    using GalaSoft.MvvmLight.Messaging;
+    using System.Threading.Tasks;
+    using System.Windows.Input;
 
     /// <summary>
     /// The ViewModel of the Authentication API.

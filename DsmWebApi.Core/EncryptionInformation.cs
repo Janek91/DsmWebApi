@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Core
 {
-    using System;
     using DsmWebApi.Core.Json;
     using Newtonsoft.Json;
+    using System;
 
     /// <summary>
     /// The DSM encryption information returned by the DSM encryption API.

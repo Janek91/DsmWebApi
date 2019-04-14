@@ -1,11 +1,12 @@
-﻿namespace DsmWebApi.WpfClient.Dsm.ViewModels
+﻿using GalaSoft.MvvmLight.Messaging;
+
+namespace DsmWebApi.WpfClient.Dsm.ViewModels
 {
-    using System.Threading.Tasks;
-    using System.Windows.Input;
     using DsmWebApi.Core;
     using DsmWebApi.Dsm.DsmSystem;
     using DsmWebApi.WpfClient.ViewModel;
-    using GalaSoft.MvvmLight.Messaging;
+    using System.Threading.Tasks;
+    using System.Windows.Input;
 
     /// <summary>
     /// The ViewModel of the DSM system API.

@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Core
 {
+    using Newtonsoft.Json;
     using System.Diagnostics.CodeAnalysis;
     using System.Threading.Tasks;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// The core encryption API.

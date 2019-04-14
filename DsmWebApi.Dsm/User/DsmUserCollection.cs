@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.User
 {
+    using Newtonsoft.Json;
     using System.Collections;
     using System.Collections.Generic;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// A collection of users on a DSM system.

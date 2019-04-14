@@ -1,7 +1,7 @@
 ﻿namespace DsmWebApi.Dsm.SystemLoading
 {
-    using System.Collections.Generic;
     using Newtonsoft.Json;
+    using System.Collections.Generic;
 
     /// <summary>
     /// The system load of a DSM system.

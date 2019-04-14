@@ -1,7 +1,7 @@
 ﻿namespace DsmWebApi.Dsm.Network
 {
-    using System.Collections.Generic;
     using Newtonsoft.Json;
+    using System.Collections.Generic;
 
     /// <summary>
     /// A network interface on a DSM system.

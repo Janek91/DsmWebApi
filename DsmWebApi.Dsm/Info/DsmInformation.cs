@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.Info
 {
-    using System;
     using DsmWebApi.Core.Json;
     using Newtonsoft.Json;
+    using System;
 
     /// <summary>
     /// The DSM system information returned by the DSM information API.

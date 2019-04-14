@@ -1,7 +1,7 @@
 ﻿namespace DsmWebApi.Dsm.FindMe
 {
-    using System.Threading.Tasks;
     using DsmWebApi.Core;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// The DSM Find Me API.

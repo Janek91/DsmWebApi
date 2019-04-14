@@ -1,10 +1,10 @@
 ﻿namespace DsmWebApi.WpfClient.Dsm.ViewModels
 {
-    using System.Threading.Tasks;
-    using System.Windows.Input;
     using DsmWebApi.Core;
     using DsmWebApi.Dsm.User;
     using DsmWebApi.WpfClient.ViewModel;
+    using System.Threading.Tasks;
+    using System.Windows.Input;
 
     /// <summary>
     /// The ViewModel of the DSM user API.

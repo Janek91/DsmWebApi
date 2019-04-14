@@ -1,7 +1,8 @@
-﻿namespace DsmWebApi.WpfClient.ViewModel
+﻿using GalaSoft.MvvmLight;
+
+namespace DsmWebApi.WpfClient.ViewModel
 {
     using DsmWebApi.Core;
-    using GalaSoft.MvvmLight;
 
     /// <summary>
     /// Base implementation of an API ViewModel.

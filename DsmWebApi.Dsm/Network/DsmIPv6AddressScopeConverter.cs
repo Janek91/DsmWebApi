@@ -1,7 +1,7 @@
 ﻿namespace DsmWebApi.Dsm.Network
 {
-    using System;
     using Newtonsoft.Json;
+    using System;
 
     /// <summary>
     /// JSON converter that converts a string representing a IPv6 address scope to a <see cref="DsmIPv6AddressScope"/> value.

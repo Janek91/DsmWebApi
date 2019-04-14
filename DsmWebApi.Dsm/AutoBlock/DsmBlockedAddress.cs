@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.AutoBlock
 {
-    using System;
     using DsmWebApi.Core.Json;
     using Newtonsoft.Json;
+    using System;
 
     /// <summary>
     /// An address blocked by Auto Block.

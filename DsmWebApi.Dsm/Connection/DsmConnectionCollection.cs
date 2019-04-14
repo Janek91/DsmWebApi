@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.Connection
 {
+    using Newtonsoft.Json;
     using System.Collections;
     using System.Collections.Generic;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// A collection of connections on a DSM system.

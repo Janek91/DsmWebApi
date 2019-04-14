@@ -1,8 +1,8 @@
 ﻿namespace DsmWebApi.Dsm.Service
 {
+    using Newtonsoft.Json;
     using System.Collections;
     using System.Collections.Generic;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// A collection of services on a DSM system.

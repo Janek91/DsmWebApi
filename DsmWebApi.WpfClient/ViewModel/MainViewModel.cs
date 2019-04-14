@@ -1,14 +1,15 @@
+﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Messaging;
+
 namespace DsmWebApi.WpfClient.ViewModel
 {
+    using DsmWebApi.Core;
+    using DsmWebApi.WpfClient.Core.ViewModels;
+    using DsmWebApi.WpfClient.Dsm.ViewModels;
     using System;
     using System.Collections.ObjectModel;
     using System.Threading.Tasks;
     using System.Windows.Input;
-    using DsmWebApi.Core;
-    using DsmWebApi.WpfClient.Core.ViewModels;
-    using DsmWebApi.WpfClient.Dsm.ViewModels;
-    using GalaSoft.MvvmLight;
-    using GalaSoft.MvvmLight.Messaging;
 
     /// <summary>
     /// This class contains properties that the main View can data bind to.

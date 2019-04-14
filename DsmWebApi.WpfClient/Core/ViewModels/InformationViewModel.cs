@@ -1,10 +1,10 @@
 ﻿namespace DsmWebApi.WpfClient.Core.ViewModels
 {
+    using DsmWebApi.Core;
+    using DsmWebApi.WpfClient.ViewModel;
     using System.Collections.Generic;
     using System.Threading.Tasks;
     using System.Windows.Input;
-    using DsmWebApi.Core;
-    using DsmWebApi.WpfClient.ViewModel;
 
     /// <summary>
     /// The ViewModel of the Information API.

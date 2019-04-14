@@ -1,7 +1,7 @@
 ﻿namespace DsmWebApi.Core.Json
 {
-    using System;
     using Newtonsoft.Json;
+    using System;
 
     /// <summary>
     /// JSON converter that converts integer values representing an UNIX timestamp to a <see cref="DateTime"/> object.

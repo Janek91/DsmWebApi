@@ -1,9 +1,9 @@
 ﻿namespace DsmWebApi.Dsm.Info
 {
-    using System.Diagnostics.CodeAnalysis;
-    using System.Threading.Tasks;
     using DsmWebApi.Core;
     using Newtonsoft.Json;
+    using System.Diagnostics.CodeAnalysis;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// The DSM information API.

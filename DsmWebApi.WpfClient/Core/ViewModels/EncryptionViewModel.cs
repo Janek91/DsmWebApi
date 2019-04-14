@@ -1,9 +1,9 @@
 ﻿namespace DsmWebApi.WpfClient.Core.ViewModels
 {
-    using System.Threading.Tasks;
-    using System.Windows.Input;
     using DsmWebApi.Core;
     using DsmWebApi.WpfClient.ViewModel;
+    using System.Threading.Tasks;
+    using System.Windows.Input;
 
     /// <summary>
     /// The ViewModel of the Encryption API.
